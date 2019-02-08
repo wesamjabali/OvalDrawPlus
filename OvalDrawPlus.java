@@ -1,5 +1,7 @@
+//Author: Wesam Jabali
+//OvalDrawPlus
 import javax.swing.JFrame;
-import javac.swing.JPanel;
+import javax.swing.JPanel;
 import java.awt.Graphics;
 import java.awt.Container;
 import java.awt.Color;
@@ -22,7 +24,7 @@ class Oval extends JPanel {
         Color myColor = new Color(255,0,0);
         g.setColor(myColor);
 
-        g.fillOval(0, 0, 100, 100);
+        g.fillOval(0, 0, panelWidth, panelHeight);
     }
 }
 
@@ -38,10 +40,11 @@ class OvalFrame extends JFrame {
     }
 }
 
-public class OvalDraw {
+public class OvalDrawPlus {
         public static void main(String[] args) {
-        System.out.println("OvalDraw Starting...");
+        System.out.println("See new window.");
         OvalFrame myFrame = new OvalFrame();
         myFrame.setVisible(true);
+
     }
 }
